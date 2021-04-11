@@ -1,0 +1,202 @@
+<html>
+    <head>
+        <title>Trang chủ</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="js/myLibrary.js" type="text/javascript"></script>
+        <link href="css/theme.css" rel="stylesheet" type="text/css"/>
+        <script src="js/myLibrary.js" type="text/javascript"></script>
+        <link href="css/menu.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <div hidden="true">
+            <script type="text/javascript">
+                var images = new Array()
+                function preload() {
+                    for (i = 0; i < preload.arguments.length; i++) {
+                        images[i] = new Image();
+                        images[i].src = preload.arguments[i];
+                    }
+                }
+                preload(
+                        "img/theme/bando.chaumy.jpg",
+                        "img/theme/bando.chauau.jpg",
+                        "img/theme/bando.chaua.jpg",
+                        "img/theme/bando.chauphi.jpg",
+                        "img/theme/bando.chauuc.jpg",
+                        "img/theme/bando.JPG",
+                        "img/theme/two.png",
+                        "img/theme/men.png",
+                        "img/theme/women.png"
+                        );
+            </script> 
+        </div>
+        <audio autoplay src="media/msbg.mp3" loop="loop" id="msbg" > </audio>
+        <div class="top-container" >
+            <h1>Cuộc đời là những chuyến đi</h1>
+            <p>Những kì quan của thế giới nằm trong tầm tay bạn !</p>
+        </div>
+        <div class="header" id="myHeader">
+            <div>
+                <ul id="nav">
+                    <li><a href="index.html">Trang chủ</a></li>
+                    <li>
+                        <a href="travel.html">Du lịch</a>
+                        <ul>
+                            <li>
+                                <a href="#">Trong nước</a>
+                                <ul>
+                                    <li><a href="#">Miền Bắc</a></li>
+                                    <li><a href="#">Miền Trung</a></li>
+                                    <li><a href="#">Miền Nam</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Ngoài nước</a>
+                                <ul>
+                                    <li><a href="#">Đông Nam Á</a></li>
+                                    <li><a href="#">Châu Á</a></li>
+                                    <li><a href="#">Châu Âu</a></li>
+                                    <li><a href="#">Châu Mĩ</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="shop.html">Mua sắm</a>
+                        <ul>
+                            <li>
+                                <a href="#">Áo, quần du lịch</a>
+                                <ul>
+                                    <li><a href="#">Đồ nam</a></li>
+                                    <li><a href="#">Đồ nữ</a></li>
+                                    <li><a href="#">Đồ bé trai</a></li>
+                                    <li><a href="#">Đồ bé gái</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Giày, dép</a>
+                                <ul>
+                                    <li><a href="#">Giày, dép nam</a></li>
+                                    <li><a href="#">Giày, dép nữ</a></li>
+                                    <li><a href="#">Giày, dép bé trai</a></li>
+                                    <li><a href="#">Giày, dép bé gái</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Balo, vali du lịch</a>
+                                <ul>
+                                    <li><a href="#">Balo</a></li>
+                                    <li><a href="#">Vali</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Mũ, nón</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Khách sạn</a>
+                        <ul>
+                            <li>
+                                <a href="#">Trong nước</a>
+                                <ul>
+                                    <li><a href="#">Miền Bắc</a></li>
+                                    <li><a href="#">Miền Trung</a></li>
+                                    <li><a href="#">Miền Nam</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Ngoài nước</a>
+                                <ul>
+                                    <li><a href="#">Đông Nam Á</a></li>
+                                    <li><a href="#">Châu Á</a></li>
+                                    <li><a href="#">Châu Âu</a></li>
+                                    <li><a href="#">Châu Mĩ</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="index.html">Thông tin</a></li>
+                    <div style="float: right">
+                        <input type="text" name="search" placeholder="Search.." class="seach">
+                        <li><a href="acc.html">Đăng nhập</a></li>
+                    </div>
+                </ul>
+            </div>
+        </div>
+        <div class="lefttop">
+        </div>
+        <div class="mid" style="height: 1250px">
+            <div class="midtop">
+                <h2>Bạn muốn du lịch ở đâu ?</h2>
+
+                <img  width="1000" src="img/theme/bando.jpg" usemap="#bando" id="bando" />
+                <map name="bando">
+
+                    <area shape="poly" coords="18,63,93,36,167,18,426,9,281,102,208,140,181,163,195,193,232,237,282,270,308,302,295,330,274,351,263,374,254,395,242,417,244,435,247,446,220,449" href="travel.html"  onmouseover="document.getElementById('bando').src = 'img/theme/bando.chaumy.jpg'"/>
+                    <area shape="poly" coords="382,158,415,145,452,156,484,158,504,165,517,188,537,218,548,232,565,230,563,249,544,267,534,282,537,303,566,306,564,332,554,361,531,360,510,364,496,377,472,389,435,272,415,250,398,253,378,246,361,219,361,183" href="travel.html" onmouseover="document.getElementById('bando').src = 'img/theme/bando.chauphi.jpg'"/>
+                    <area shape="poly" coords="384,111,400,68,433,45,468,36,514,36,553,38,560,67,553,100,553,117,543,131,477,138,437,137,399,141,389,145" href="travel.html" onmouseover="document.getElementById('bando').src = 'img/theme/bando.chauau.jpg'"/>
+                    <area shape="poly" coords="565,37,606,23,654,20,693,26,728,31,761,36,791,40,835,45,852,48,856,66,839,77,833,84,829,101,819,112,820,136,820,151,808,167,774,167,787,186,791,210,797,231,801,258,801,270,801,290,787,295,747,305,725,292,699,230,678,202,662,212,668,240,642,241,619,194,594,185,591,201,582,213,572,218,569,220,550,222,534,203,524,178,509,154,505,141,494,139,515,134,550,131,561,100,560,67,554,40" href="travel.html" onmouseover="document.getElementById('bando').src = 'img/theme/bando.chaua.jpg';"/>
+                    <area shape="poly" coords="761,336,788,320,808,307,828,304,848,311,860,334,866,351,867,364,849,389,841,392,830,406,824,414,785,382,753,382,741,377" href="travel.html" onmouseover="document.getElementById('bando').src = 'img/theme/bando.chauuc.jpg';" />
+                </map>
+            </div>
+            <div class="midbot">
+                <h2>Hay là mua sắm nhé ?</h2>
+                <img src="img/theme/two.png" width="612px" usemap="#shop" id="shop" alt=""/>
+                <map name="shop">
+                    <area href="shop.html"  onmouseover="document.getElementById('shop').src = 'img/theme/men.png'" coords="419,554,451,530,467,484,469,566,487,570,504,567,529,318,544,326,563,312,551,102,491,64,447,64,395,88,368,187,380,268,395,279,392,399,425,491,415,532" shape="poly"/>
+                    <area href="shop.html"  onmouseover="document.getElementById('shop').src = 'img/theme/women.png'" coords="415,486,367,452,252,184,271,72,259,71,168,72,157,74,177,176,71,439,15,486,61,547,139,570,209,575,291,571,369,547,407,508" shape="poly"/>
+                </map>
+            </div>
+        </div>
+        <footer style="margin-top: 1370px">
+            <div>
+                <div class="footerleft">
+                    Địa chỉ: Hòa Minh, Liên Chiểu, Đà Nẵng, Việt Nam<br/>
+                    Hotline: 01647079556<br/>
+                    Email: 0331999bbs@gmail.com<br/>
+                    Facebook: fb.com/mr.bbs.noname
+                </div>
+            </div>
+            <div class="footerright">
+                <div id="map" style="width:100%;height:100%;"></div>
+
+
+            </div>
+        </footer>
+        <div class="clock" id="clock">
+            <canvas id="canvas" width="210px" height="210px" style="border: 0px solid;"></canvas>
+        </div>
+
+
+        <script>
+            function myMap() {
+                var mapCanvas = document.getElementById("map");
+                var mapOptions = {
+                    center: new google.maps.LatLng(16.0544, 108.20216), zoom: 15
+                };
+                var map = new google.maps.Map(mapCanvas, mapOptions);
+            }
+        </script>
+
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDEIOyCAAW6PFg1H4CzgUkKYGL91qEPkt0&callback=myMap"></script>
+        <script>
+            window.onscroll = function () {
+                myFunction()
+            };
+
+            var header = document.getElementById("myHeader");
+            var sticky = header.offsetTop;
+
+            function myFunction() {
+                if (window.pageYOffset >= sticky) {
+                    header.classList.add("sticky");
+                } else {
+                    header.classList.remove("sticky");
+                }
+            }
+        </script>   
+
+    </body>
+</html>
